@@ -8,6 +8,7 @@ public class VIPOrder extends Order{
     @Override
     public double totalPrice(ArrayList<Item> items, Customer c) {
         double newSum = 0;
+
         if (c.getCustomerType() == CusType.VIP) {
             double discount = c.getDiscount();
             newSum = (Utils.calcItemSum(items) * discount);
@@ -17,4 +18,6 @@ public class VIPOrder extends Order{
         }
         return newSum;
     }
+
+
 }

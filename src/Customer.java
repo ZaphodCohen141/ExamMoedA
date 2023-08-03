@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 
 public class Customer implements Gift{
@@ -12,7 +13,6 @@ public class Customer implements Gift{
     private Double discount;
     private ArrayList<Item> favorites;
     private Gift gift;
-    private List<Integer> idList;
 
     public Customer(int id, String firstName, String lastName, String email, String address, CusType customerType) {
 //        if(unique(id)){
@@ -33,10 +33,6 @@ public class Customer implements Gift{
 
 
 
-    }
-
-    public List<Integer> getIdList() {
-        return idList;
     }
 
     public int getId() {
@@ -111,10 +107,6 @@ public class Customer implements Gift{
         this.discount = discount;
     }
 
-    public void setIdList(List<Integer> idList) {
-        this.idList = idList;
-    }
-
     public void setFavorites(ArrayList<Item> favorites) {
         this.favorites = favorites;
     }
@@ -130,17 +122,6 @@ public class Customer implements Gift{
             System.out.println("already in the fav list");
         }
     }
-    public boolean unique(int id){
-        boolean flag;
-        if(this.idList.contains(id)){
-            flag = false;
-        }else{
-            this.idList.add(id);
-            flag = true;
-        }
-        return flag;
-    }
-
     @Override
     public void takeGift(Gift g) {
         this.gift = g;

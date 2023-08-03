@@ -23,18 +23,18 @@ public class Main {
         VIPOrder vip2 = new VIPOrder(2,"b","a",items,c3,Payment.CASH,today);
         RegularOrder reg1 = new RegularOrder(1,"c","a",items,c1,Payment.OTHER,today);
         RegularOrder reg2 = new RegularOrder(1,"d","a",items,c4,Payment.OTHER,today);
-        System.out.println(vip1.getTotalPrice());
-        System.out.println(reg1.getTotalPrice());
+//        System.out.println(vip1.getTotalPrice());
+//        System.out.println(reg1.getTotalPrice());
 
-        System.out.println(c1.getFavorites());
-        c1.removeFav(i1);
-        System.out.println(c1.getFavorites());
-        c1.addFav(i2);
-        c1.addFav(i1);
-        System.out.println(c1.getFavorites());
-
-
-        GiftExam g1 = new GiftExam("someww");
-        c1.takeGift(g1);
+//        System.out.println(c1.getFavorites());
+//        c1.removeFav(i1);
+//        System.out.println(c1.getFavorites());
+//        c1.addFav(i2);
+//        c1.addFav(i1);
+//        System.out.println(c1.getFavorites());
+//
+//
+//        GiftExam g1 = new GiftExam("some");
+//        c1.takeGift(g1);
     }
 }
